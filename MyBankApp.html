@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"></rel>
+    <title>MyBankApp</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Bank Account</h2>
+        <label for="accountHolder">Account's Name</label>
+        <input type="text" id="accountHolder" placeholder="Enter account's name">
+
+        <label for="amount">Amount</label>
+        <input type="number" id="amount" placeholder="Enter amount">
+
+        <div class="cmd_btn">
+            <button onclick="depositMoney()">Deposit</button>
+            <button onclick="withdrawMoney()">Withdraw</button>
+        </div>
+
+        <div class="balance" id="balance">Current Balance: $0</div>
+        <div class="error" id="error"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
